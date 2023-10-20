@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "subsonic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/twostraws/Subsonic",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5ce78cce99e9bccd9a249029a243c03976e4965a"
+      }
+    }
+  ],
+  "version" : 2
+}
