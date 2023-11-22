@@ -57,13 +57,17 @@ struct GlobosTap: View {
         }
     }
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
+    
     var body: some View {
         GeometryReader{ geo2 in
             VStack {
                 HStack{
                     
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -187,6 +191,9 @@ struct GlobosTap: View {
                 startPoint: .leading,
                 endPoint: .trailing
             ))
+            .onAppear() {
+                init_sound()
+            }
         }
     }
 }

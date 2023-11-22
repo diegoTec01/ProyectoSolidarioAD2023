@@ -46,6 +46,9 @@ struct ColoresTap: View {
     
     @Environment(\.dismiss) private var dismiss
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     var body: some View {
         ZStack {
@@ -56,7 +59,7 @@ struct ColoresTap: View {
                 
                 HStack{
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -138,6 +141,7 @@ struct ColoresTap: View {
                 }
                 .onAppear {
                     opciones = randomOptions(including: colorCorrecto)
+                    init_sound()
                 }
                 
                 Spacer()

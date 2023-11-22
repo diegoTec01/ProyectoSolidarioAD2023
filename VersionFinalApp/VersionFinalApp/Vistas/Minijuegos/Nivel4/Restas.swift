@@ -32,7 +32,7 @@ struct Restas: View {
     func generarRandom(){
         
         totalRight = totalRight + 1
-        play(sound: "ballonPop.mp3")
+        play(sound: "correct-2.wav")
         
         arregloDeNumeros = [Int]()
         numerorandom1 = Int.random(in: 10...20)
@@ -58,7 +58,7 @@ struct Restas: View {
                 GeometryReader { geometry in
                     //Spacer()
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -130,7 +130,7 @@ struct Restas: View {
                 HStack{
                     Button ("\(election)"){
                         if (election == restaNumeros2){
-                            play(sound: "Sonidos/Minijuegos/correct-2.wav")
+                            play(sound: "correct-1.wav")
                             generarRandom()
                             
                         }
@@ -145,7 +145,7 @@ struct Restas: View {
                     
                     Button ("\(electiontwo)"){
                         if (electiontwo == restaNumeros2){
-                            play(sound: "Sonidos/Minijuegos/correct-2.wav")
+                            play(sound: "correct-1.wav")
                             generarRandom()
                             
                         }
@@ -167,10 +167,6 @@ struct Restas: View {
                     .bold()
                     .offset(x:0, y:-260)
             }
-            
-            
-            
-            
         }
         .onAppear{
             generarRandom()

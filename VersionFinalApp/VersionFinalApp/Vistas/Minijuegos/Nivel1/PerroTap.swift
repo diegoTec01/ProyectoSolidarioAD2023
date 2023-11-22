@@ -17,6 +17,9 @@ struct PerroTap: View {
     @Environment(\.dismiss) private var dismiss
     @State var imagen = "Perro/perro_base"
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     var body: some View {
         ZStack {
@@ -64,7 +67,7 @@ struct PerroTap: View {
                             .shadow(radius: 10)
                             .onTapGesture {
                                 speakF(text: "Perro", isOn: textToSpeech)
-                                play(sound: "dogBark1.mp3")
+                                play(sound: "bark.wav")
                                 imagen = "Perro/perro_tap"
                                 Task {
                                     try? await Task.sleep(nanoseconds: UInt64(1 * 1E9))
@@ -72,7 +75,7 @@ struct PerroTap: View {
                                 }
                             }
                         Button(action: {
-                            play(sound: "Sonidos/Minijuegos/go-back.wav")
+                            play(sound: "go-back.wav")
                             dismiss()
                         }) {
                             Text("Regresar")
@@ -107,6 +110,9 @@ struct PerroTap: View {
             
         }
         .ignoresSafeArea()
+        .onAppear() {
+            init_sound()
+        }
     }
     
     func speakF(text: String, isOn: Bool) {

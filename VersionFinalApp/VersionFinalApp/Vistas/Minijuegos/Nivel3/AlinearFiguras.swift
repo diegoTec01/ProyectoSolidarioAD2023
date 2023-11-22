@@ -53,8 +53,10 @@ struct AlinearFiguras: View {
         @State private var dragStartedX: CGFloat = 0
         @State private var dragStartedY: CGFloat = 0
 
-
-        
+        func init_sound() {
+            play(sound: "select-game.wav")
+        }
+    
         var body: some View {
             VStack(){
                 
@@ -62,7 +64,7 @@ struct AlinearFiguras: View {
                 
                 HStack {
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -452,6 +454,9 @@ struct AlinearFiguras: View {
                 startPoint: .leading,
                 endPoint: .trailing
             ))
+            .onAppear() {
+                init_sound()
+            }
         }
     
 }

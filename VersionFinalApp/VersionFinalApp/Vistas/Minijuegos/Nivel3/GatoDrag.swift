@@ -23,7 +23,9 @@ struct GatoDrag: View {
     @State var dragAmountToy = CGSize.zero
     @State var dragAmountFood = CGSize.zero
     
-    
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     @Environment(\.dismiss) private var dismiss
     
@@ -152,7 +154,8 @@ struct GatoDrag: View {
                                         bowlImage = "Gato/plato_lleno"
                                         catImage = "Gato/gato_comiendo"
                                         Task {
-                                            play(sound:"pourFood.mp3")
+                                            play(sound:"meow.wav")
+                                            play(sound:"pouring-food.wav")
                                             try? await Task.sleep(nanoseconds: UInt64(3 * 1E9))
                                             bowlImage = "Gato/plato_vacio"
                                             catImage = "Gato/gato_base"
@@ -189,10 +192,10 @@ struct GatoDrag: View {
                             }
                             .onEnded { _ in
                                 if catBox.contains(CGPoint(x: geo.size.width/1.42 + dragAmount.width, y: geo.size.height/1.66 + dragAmount.height)) {
-                                    play(sound: "scrubbing.mp3")
+                                    play(sound: "cat-playing.wav")
                                     catImage = "Gato/gato_enjabonado"
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                                        play(sound: "catMeow1.mp3")
+                                        play(sound: "meow.wav")
                                         catImage = "Gato/gato_base"
                                     }
                                 }
@@ -226,7 +229,8 @@ struct GatoDrag: View {
                                 if catBox.contains(CGPoint(x: geo.size.width/1.42 + dragAmountToy.width, y: geo.size.height/1.66 + dragAmountToy.height)) {
                                     play(sound: "catPlay.mp3")
                                     DispatchQueue.main.async {
-                                        play(sound: "catMeow1.mp3")
+                                        play(sound: "cat-playing.wav")
+                                        play(sound: "cat-toy.wav")
                                         catImage = "Gato/gato_jugando"
                                         Task {
                                             try? await Task.sleep(nanoseconds: UInt64(5 * 1E9))
@@ -247,7 +251,7 @@ struct GatoDrag: View {
                         speakF(text: "Jugar", isOn: textToSpeech)
                     }
                 Button(action: {
-                    play(sound: "Sonidos/Minijuegos/go-back.wav")
+                    play(sound: "go-back.wav")
                     dismiss()
                 }) {
                     Text("Regresar")
@@ -280,6 +284,9 @@ struct GatoDrag: View {
             
         }
         .ignoresSafeArea()
+        .onAppear() {
+            init_sound()
+        }
     }
     
     func speakF(text: String, isOn: Bool) {

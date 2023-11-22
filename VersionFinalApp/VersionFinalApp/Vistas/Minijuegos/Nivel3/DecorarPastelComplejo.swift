@@ -55,7 +55,9 @@ struct DecorarPastelComplejo: View {
         @State var dragAmountVelas = CGSize.zero
         @State var dragAmountBlanco = CGSize.zero
 
-
+        func init_sound() {
+            play(sound: "select-game.wav")
+        }
         
         var body: some View {
             VStack(){
@@ -280,19 +282,19 @@ struct DecorarPastelComplejo: View {
                                                 if cakeBoxL1.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountBetunAzul.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunAzul.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL1 = "Pastel/betun_azul_L1"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL2.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountBetunAzul.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunAzul.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL2 = "Pastel/betun_azul_L2"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL3.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountBetunAzul.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunAzul.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL3 = "Pastel/betun_azul_L3"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 self.dragAmountBetunAzul = .zero
@@ -313,19 +315,19 @@ struct DecorarPastelComplejo: View {
                                                 if cakeBoxL1.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountBetunRosa.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunRosa.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL1 = "Pastel/betun_rosa_L1"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL2.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountBetunRosa.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunRosa.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL2 = "Pastel/betun_rosa_L2"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL3.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountBetunRosa.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.135 + dragAmountBetunRosa.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL3 = "Pastel/betun_rosa_L3"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 self.dragAmountBetunRosa = .zero
@@ -346,19 +348,19 @@ struct DecorarPastelComplejo: View {
                                                 if cakeBoxL1.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountVelas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.4 + dragAmountVelas.height)) {
                                                     DispatchQueue.main.async {
                                                         velasL1 = "Pastel/velas_L1"
-                                                        play(sound: "Sonidos/Minijuegos/velas.wav")
+                                                        play(sound: "velas.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL2.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountVelas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.4 + dragAmountVelas.height)) {
                                                     DispatchQueue.main.async {
                                                         velasL2 = "Pastel/velas_L2"
-                                                        play(sound: "Sonidos/Minijuegos/velas.wav")
+                                                        play(sound: "velas.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL3.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.28 + dragAmountVelas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.4 + dragAmountVelas.height)) {
                                                     DispatchQueue.main.async {
                                                         velasL3 = "Pastel/velas_L3"
-                                                        play(sound: "Sonidos/Minijuegos/velas.wav")
+                                                        play(sound: "velas.wav")
                                                     }
                                                 }
                                                 self.dragAmountVelas = .zero
@@ -379,19 +381,19 @@ struct DecorarPastelComplejo: View {
                                                 if cakeBoxL1.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.72 + dragAmountBetunNaranja.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.42 + dragAmountBetunNaranja.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL1 = "Pastel/betun_naranja_L1"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL2.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.72 + dragAmountBetunNaranja.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.42 + dragAmountBetunNaranja.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL2 = "Pastel/betun_naranja_L2"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL3.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.72 + dragAmountBetunNaranja.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.42 + dragAmountBetunNaranja.height)) {
                                                     DispatchQueue.main.async {
                                                         pastelL3 = "Pastel/betun_naranja_L3"
-                                                        play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                        play(sound: "impact-paint-1.wav")
                                                     }
                                                 }
                                                 self.dragAmountBetunNaranja = .zero
@@ -442,19 +444,19 @@ struct DecorarPastelComplejo: View {
                                                 if cakeBoxL1.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.71 + dragAmountPerlas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.65 + dragAmountPerlas.height)) {
                                                     DispatchQueue.main.async {
                                                         perlasL1 = "Pastel/perlas_L1"
-                                                        play(sound: "Sonidos/Minijuegos/perlas.wav")
+                                                        play(sound: "pearls.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL2.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.71 + dragAmountPerlas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.65 + dragAmountPerlas.height)) {
                                                     DispatchQueue.main.async {
                                                         perlasL2 = "Pastel/perlas_L2"
-                                                        play(sound: "Sonidos/Minijuegos/perlas.wav")
+                                                        play(sound: "pearls.wav")
                                                     }
                                                 }
                                                 else if cakeBoxL3.contains(CGPoint(x: (geo2.frame(in: .global).minX) + geo2.size.width*0.71 + dragAmountPerlas.width, y: (geo2.frame(in: .global).minY) + geo2.size.height*0.65 + dragAmountPerlas.height)) {
                                                     DispatchQueue.main.async {
                                                         perlasL3 = "Pastel/perlas_L3"
-                                                        play(sound: "Sonidos/Minijuegos/perlas.wav")
+                                                        play(sound: "pearls.wav")
                                                     }
                                                 }
                                                 self.dragAmountPerlas = .zero
@@ -513,6 +515,9 @@ struct DecorarPastelComplejo: View {
                 startPoint: .leading,
                 endPoint: .trailing
             ))
+            .onAppear() {
+                init_sound()
+            }
         }
     
 }

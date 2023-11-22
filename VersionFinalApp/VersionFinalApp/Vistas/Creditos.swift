@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import Subsonic
 
 struct Creditos: View {
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
+    
     var body: some View {
         
         ZStack {
@@ -74,8 +79,9 @@ struct Creditos: View {
             
         }
         .ignoresSafeArea()
-        
-        
+        .onAppear{
+            init_sound()
+        }
     }
 }
 

@@ -32,6 +32,47 @@
 		43A1D8C72AD43507004B9951 /* PerroTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1D8C62AD43507004B9951 /* PerroTap.swift */; };
 		43A1D8C92AD438CB004B9951 /* ColoresTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1D8C82AD438CB004B9951 /* ColoresTap.swift */; };
 		43A1D8CC2AD43A2B004B9951 /* Subsonic in Frameworks */ = {isa = PBXBuildFile; productRef = 43A1D8CB2AD43A2B004B9951 /* Subsonic */; };
+		E60AE20E2B04617900BFC55B /* C_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2022B04616E00BFC55B /* C_piano.wav */; };
+		E60AE20F2B04617900BFC55B /* FS_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2032B04616F00BFC55B /* FS_piano.wav */; };
+		E60AE2102B04617900BFC55B /* DS_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2042B04617000BFC55B /* DS_piano.wav */; };
+		E60AE2112B04617900BFC55B /* G_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2052B04617100BFC55B /* G_piano.wav */; };
+		E60AE2122B04617900BFC55B /* A_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2062B04617200BFC55B /* A_piano.wav */; };
+		E60AE2132B04617900BFC55B /* D_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2072B04617300BFC55B /* D_piano.wav */; };
+		E60AE2142B04617900BFC55B /* CS_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2082B04617400BFC55B /* CS_piano.wav */; };
+		E60AE2152B04617900BFC55B /* F_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2092B04617500BFC55B /* F_piano.wav */; };
+		E60AE2162B04617900BFC55B /* AS_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE20A2B04617600BFC55B /* AS_piano.wav */; };
+		E60AE2172B04617900BFC55B /* B_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE20B2B04617700BFC55B /* B_piano.wav */; };
+		E60AE2182B04617900BFC55B /* E_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE20C2B04617800BFC55B /* E_piano.wav */; };
+		E60AE2192B04617900BFC55B /* GS_piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE20D2B04617900BFC55B /* GS_piano.wav */; };
+		E60AE2402B0464B000BFC55B /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE2392B0464AA00BFC55B /* C.wav */; };
+		E60AE2412B0464B000BFC55B /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23A2B0464AB00BFC55B /* D.wav */; };
+		E60AE2422B0464B000BFC55B /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23B2B0464AC00BFC55B /* F.wav */; };
+		E60AE2432B0464B000BFC55B /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23C2B0464AD00BFC55B /* B.wav */; };
+		E60AE2442B0464B000BFC55B /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23D2B0464AE00BFC55B /* E.wav */; };
+		E60AE2452B0464B000BFC55B /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23E2B0464AF00BFC55B /* A.wav */; };
+		E60AE2462B0464B000BFC55B /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = E60AE23F2B0464B000BFC55B /* G.wav */; };
+		E6AF28AC2B0E727700E8FF7F /* correct-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A12B0E726D00E8FF7F /* correct-2.wav */; };
+		E6AF28AD2B0E727700E8FF7F /* pearls.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A22B0E726E00E8FF7F /* pearls.wav */; };
+		E6AF28AE2B0E727700E8FF7F /* select.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A32B0E726F00E8FF7F /* select.wav */; };
+		E6AF28AF2B0E727700E8FF7F /* correct-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A42B0E727000E8FF7F /* correct-1.wav */; };
+		E6AF28B12B0E727700E8FF7F /* correct-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A62B0E727200E8FF7F /* correct-3.wav */; };
+		E6AF28B22B0E727700E8FF7F /* impact-paint.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A72B0E727300E8FF7F /* impact-paint.wav */; };
+		E6AF28B32B0E727700E8FF7F /* select-game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28A82B0E727400E8FF7F /* select-game.wav */; };
+		E6AF28B52B0E727700E8FF7F /* velas.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28AA2B0E727600E8FF7F /* velas.wav */; };
+		E6AF28B62B0E727700E8FF7F /* vetunazo-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28AB2B0E727700E8FF7F /* vetunazo-1.wav */; };
+		E6AF28B82B0E745500E8FF7F /* go-back.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28B72B0E745500E8FF7F /* go-back.wav */; };
+		E6AF28BA2B0E74D700E8FF7F /* impact-paint-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28B92B0E74D700E8FF7F /* impact-paint-1.wav */; };
+		E6AF28CB2B0E7AD700E8FF7F /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28C62B0E7AD300E8FF7F /* snare.wav */; };
+		E6AF28CC2B0E7AD700E8FF7F /* tom.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28C72B0E7AD400E8FF7F /* tom.wav */; };
+		E6AF28CD2B0E7AD700E8FF7F /* hi-hat.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28C82B0E7AD500E8FF7F /* hi-hat.wav */; };
+		E6AF28CE2B0E7AD700E8FF7F /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28C92B0E7AD600E8FF7F /* kick.wav */; };
+		E6AF28CF2B0E7AD700E8FF7F /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28CA2B0E7AD700E8FF7F /* crash.wav */; };
+		E6AF28D62B0E850B00E8FF7F /* pouring-food.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D02B0E850600E8FF7F /* pouring-food.wav */; };
+		E6AF28D72B0E850B00E8FF7F /* cat-toy.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D12B0E850700E8FF7F /* cat-toy.wav */; };
+		E6AF28D82B0E850B00E8FF7F /* meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D22B0E850800E8FF7F /* meow.wav */; };
+		E6AF28D92B0E850B00E8FF7F /* dog-toy.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D32B0E850900E8FF7F /* dog-toy.wav */; };
+		E6AF28DA2B0E850B00E8FF7F /* bark.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D42B0E850A00E8FF7F /* bark.wav */; };
+		E6AF28DB2B0E850B00E8FF7F /* cat-playing.wav in Resources */ = {isa = PBXBuildFile; fileRef = E6AF28D52B0E850B00E8FF7F /* cat-playing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +101,47 @@
 		43A1D8C42AD43482004B9951 /* PerroDrag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroDrag.swift; sourceTree = "<group>"; };
 		43A1D8C62AD43507004B9951 /* PerroTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerroTap.swift; sourceTree = "<group>"; };
 		43A1D8C82AD438CB004B9951 /* ColoresTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoresTap.swift; sourceTree = "<group>"; };
+		E60AE2022B04616E00BFC55B /* C_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C_piano.wav; sourceTree = "<group>"; };
+		E60AE2032B04616F00BFC55B /* FS_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FS_piano.wav; sourceTree = "<group>"; };
+		E60AE2042B04617000BFC55B /* DS_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = DS_piano.wav; sourceTree = "<group>"; };
+		E60AE2052B04617100BFC55B /* G_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G_piano.wav; sourceTree = "<group>"; };
+		E60AE2062B04617200BFC55B /* A_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A_piano.wav; sourceTree = "<group>"; };
+		E60AE2072B04617300BFC55B /* D_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D_piano.wav; sourceTree = "<group>"; };
+		E60AE2082B04617400BFC55B /* CS_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CS_piano.wav; sourceTree = "<group>"; };
+		E60AE2092B04617500BFC55B /* F_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F_piano.wav; sourceTree = "<group>"; };
+		E60AE20A2B04617600BFC55B /* AS_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AS_piano.wav; sourceTree = "<group>"; };
+		E60AE20B2B04617700BFC55B /* B_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B_piano.wav; sourceTree = "<group>"; };
+		E60AE20C2B04617800BFC55B /* E_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E_piano.wav; sourceTree = "<group>"; };
+		E60AE20D2B04617900BFC55B /* GS_piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GS_piano.wav; sourceTree = "<group>"; };
+		E60AE2392B0464AA00BFC55B /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		E60AE23A2B0464AB00BFC55B /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		E60AE23B2B0464AC00BFC55B /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		E60AE23C2B0464AD00BFC55B /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		E60AE23D2B0464AE00BFC55B /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		E60AE23E2B0464AF00BFC55B /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		E60AE23F2B0464B000BFC55B /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		E6AF28A12B0E726D00E8FF7F /* correct-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-2.wav"; sourceTree = "<group>"; };
+		E6AF28A22B0E726E00E8FF7F /* pearls.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pearls.wav; sourceTree = "<group>"; };
+		E6AF28A32B0E726F00E8FF7F /* select.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select.wav; sourceTree = "<group>"; };
+		E6AF28A42B0E727000E8FF7F /* correct-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-1.wav"; sourceTree = "<group>"; };
+		E6AF28A62B0E727200E8FF7F /* correct-3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-3.wav"; sourceTree = "<group>"; };
+		E6AF28A72B0E727300E8FF7F /* impact-paint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "impact-paint.wav"; sourceTree = "<group>"; };
+		E6AF28A82B0E727400E8FF7F /* select-game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "select-game.wav"; sourceTree = "<group>"; };
+		E6AF28AA2B0E727600E8FF7F /* velas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = velas.wav; sourceTree = "<group>"; };
+		E6AF28AB2B0E727700E8FF7F /* vetunazo-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "vetunazo-1.wav"; sourceTree = "<group>"; };
+		E6AF28B72B0E745500E8FF7F /* go-back.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "go-back.wav"; path = "../../../go-back.wav"; sourceTree = "<group>"; };
+		E6AF28B92B0E74D700E8FF7F /* impact-paint-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "impact-paint-1.wav"; sourceTree = "<group>"; };
+		E6AF28C62B0E7AD300E8FF7F /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snare.wav; sourceTree = "<group>"; };
+		E6AF28C72B0E7AD400E8FF7F /* tom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tom.wav; sourceTree = "<group>"; };
+		E6AF28C82B0E7AD500E8FF7F /* hi-hat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hi-hat.wav"; sourceTree = "<group>"; };
+		E6AF28C92B0E7AD600E8FF7F /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kick.wav; sourceTree = "<group>"; };
+		E6AF28CA2B0E7AD700E8FF7F /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		E6AF28D02B0E850600E8FF7F /* pouring-food.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "pouring-food.wav"; sourceTree = "<group>"; };
+		E6AF28D12B0E850700E8FF7F /* cat-toy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cat-toy.wav"; sourceTree = "<group>"; };
+		E6AF28D22B0E850800E8FF7F /* meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = meow.wav; sourceTree = "<group>"; };
+		E6AF28D32B0E850900E8FF7F /* dog-toy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "dog-toy.wav"; sourceTree = "<group>"; };
+		E6AF28D42B0E850A00E8FF7F /* bark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bark.wav; sourceTree = "<group>"; };
+		E6AF28D52B0E850B00E8FF7F /* cat-playing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cat-playing.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +207,7 @@
 		43A1D8AB2AD38CD3004B9951 /* Vistas */ = {
 			isa = PBXGroup;
 			children = (
+				E6AF28A02B0E721F00E8FF7F /* Sounds */,
 				43A1D8A92AD38CA7004B9951 /* MenuPrincipal.swift */,
 				431E08D82AD82F6E00CC9A65 /* Creditos.swift */,
 				43A1D8A82AD38B72004B9951 /* Minijuegos */,
@@ -135,6 +218,9 @@
 		43A1D8AC2AD38CE2004B9951 /* Nivel1 */ = {
 			isa = PBXGroup;
 			children = (
+				E6AF28BB2B0E798F00E8FF7F /* DrumSounds */,
+				E60AE2382B04649300BFC55B /* XilofonoSounds */,
+				E60AE2012B04615200BFC55B /* PianoSounds */,
 				43A1D8BA2AD38FEB004B9951 /* GatoTap.swift */,
 				43A1D8C62AD43507004B9951 /* PerroTap.swift */,
 				43A175F72AD4D315005C0C00 /* AvionTap.swift */,
@@ -185,6 +271,75 @@
 			path = GlobosSettings;
 			sourceTree = "<group>";
 		};
+		E60AE2012B04615200BFC55B /* PianoSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E60AE2062B04617200BFC55B /* A_piano.wav */,
+				E60AE20A2B04617600BFC55B /* AS_piano.wav */,
+				E60AE20B2B04617700BFC55B /* B_piano.wav */,
+				E60AE2022B04616E00BFC55B /* C_piano.wav */,
+				E60AE2082B04617400BFC55B /* CS_piano.wav */,
+				E60AE2072B04617300BFC55B /* D_piano.wav */,
+				E60AE2042B04617000BFC55B /* DS_piano.wav */,
+				E60AE20C2B04617800BFC55B /* E_piano.wav */,
+				E60AE2092B04617500BFC55B /* F_piano.wav */,
+				E60AE2032B04616F00BFC55B /* FS_piano.wav */,
+				E60AE2052B04617100BFC55B /* G_piano.wav */,
+				E60AE20D2B04617900BFC55B /* GS_piano.wav */,
+			);
+			path = PianoSounds;
+			sourceTree = "<group>";
+		};
+		E60AE2382B04649300BFC55B /* XilofonoSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E60AE23E2B0464AF00BFC55B /* A.wav */,
+				E60AE23C2B0464AD00BFC55B /* B.wav */,
+				E60AE2392B0464AA00BFC55B /* C.wav */,
+				E60AE23A2B0464AB00BFC55B /* D.wav */,
+				E60AE23D2B0464AE00BFC55B /* E.wav */,
+				E60AE23B2B0464AC00BFC55B /* F.wav */,
+				E60AE23F2B0464B000BFC55B /* G.wav */,
+			);
+			path = XilofonoSounds;
+			sourceTree = "<group>";
+		};
+		E6AF28A02B0E721F00E8FF7F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF28D42B0E850A00E8FF7F /* bark.wav */,
+				E6AF28D52B0E850B00E8FF7F /* cat-playing.wav */,
+				E6AF28D12B0E850700E8FF7F /* cat-toy.wav */,
+				E6AF28D32B0E850900E8FF7F /* dog-toy.wav */,
+				E6AF28D22B0E850800E8FF7F /* meow.wav */,
+				E6AF28D02B0E850600E8FF7F /* pouring-food.wav */,
+				E6AF28B72B0E745500E8FF7F /* go-back.wav */,
+				E6AF28B92B0E74D700E8FF7F /* impact-paint-1.wav */,
+				E6AF28A42B0E727000E8FF7F /* correct-1.wav */,
+				E6AF28A12B0E726D00E8FF7F /* correct-2.wav */,
+				E6AF28A62B0E727200E8FF7F /* correct-3.wav */,
+				E6AF28A72B0E727300E8FF7F /* impact-paint.wav */,
+				E6AF28A22B0E726E00E8FF7F /* pearls.wav */,
+				E6AF28A82B0E727400E8FF7F /* select-game.wav */,
+				E6AF28A32B0E726F00E8FF7F /* select.wav */,
+				E6AF28AA2B0E727600E8FF7F /* velas.wav */,
+				E6AF28AB2B0E727700E8FF7F /* vetunazo-1.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E6AF28BB2B0E798F00E8FF7F /* DrumSounds */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF28CA2B0E7AD700E8FF7F /* crash.wav */,
+				E6AF28C82B0E7AD500E8FF7F /* hi-hat.wav */,
+				E6AF28C92B0E7AD600E8FF7F /* kick.wav */,
+				E6AF28C62B0E7AD300E8FF7F /* snare.wav */,
+				E6AF28C72B0E7AD400E8FF7F /* tom.wav */,
+			);
+			path = DrumSounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,7 +371,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					43A1D8962AD38B02004B9951 = {
 						CreatedOnToolsVersion = 14.0;
@@ -249,8 +404,49 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60AE2452B0464B000BFC55B /* A.wav in Resources */,
+				E6AF28AD2B0E727700E8FF7F /* pearls.wav in Resources */,
+				E60AE2142B04617900BFC55B /* CS_piano.wav in Resources */,
+				E60AE2402B0464B000BFC55B /* C.wav in Resources */,
+				E6AF28B62B0E727700E8FF7F /* vetunazo-1.wav in Resources */,
+				E60AE2462B0464B000BFC55B /* G.wav in Resources */,
+				E6AF28CE2B0E7AD700E8FF7F /* kick.wav in Resources */,
+				E60AE2162B04617900BFC55B /* AS_piano.wav in Resources */,
 				43A1D8A22AD38B05004B9951 /* Preview Assets.xcassets in Resources */,
+				E60AE2422B0464B000BFC55B /* F.wav in Resources */,
+				E60AE2102B04617900BFC55B /* DS_piano.wav in Resources */,
+				E6AF28CD2B0E7AD700E8FF7F /* hi-hat.wav in Resources */,
+				E6AF28DA2B0E850B00E8FF7F /* bark.wav in Resources */,
+				E6AF28DB2B0E850B00E8FF7F /* cat-playing.wav in Resources */,
+				E60AE20E2B04617900BFC55B /* C_piano.wav in Resources */,
+				E6AF28CF2B0E7AD700E8FF7F /* crash.wav in Resources */,
+				E60AE2112B04617900BFC55B /* G_piano.wav in Resources */,
+				E6AF28AF2B0E727700E8FF7F /* correct-1.wav in Resources */,
+				E60AE2412B0464B000BFC55B /* D.wav in Resources */,
+				E60AE2432B0464B000BFC55B /* B.wav in Resources */,
+				E60AE2442B0464B000BFC55B /* E.wav in Resources */,
+				E60AE2182B04617900BFC55B /* E_piano.wav in Resources */,
+				E6AF28D82B0E850B00E8FF7F /* meow.wav in Resources */,
+				E6AF28AC2B0E727700E8FF7F /* correct-2.wav in Resources */,
+				E6AF28D62B0E850B00E8FF7F /* pouring-food.wav in Resources */,
+				E6AF28B12B0E727700E8FF7F /* correct-3.wav in Resources */,
+				E6AF28CB2B0E7AD700E8FF7F /* snare.wav in Resources */,
+				E6AF28BA2B0E74D700E8FF7F /* impact-paint-1.wav in Resources */,
+				E6AF28B22B0E727700E8FF7F /* impact-paint.wav in Resources */,
+				E60AE2192B04617900BFC55B /* GS_piano.wav in Resources */,
+				E6AF28D92B0E850B00E8FF7F /* dog-toy.wav in Resources */,
 				43A1D89F2AD38B05004B9951 /* Assets.xcassets in Resources */,
+				E60AE2152B04617900BFC55B /* F_piano.wav in Resources */,
+				E6AF28CC2B0E7AD700E8FF7F /* tom.wav in Resources */,
+				E60AE20F2B04617900BFC55B /* FS_piano.wav in Resources */,
+				E6AF28B32B0E727700E8FF7F /* select-game.wav in Resources */,
+				E60AE2122B04617900BFC55B /* A_piano.wav in Resources */,
+				E6AF28B82B0E745500E8FF7F /* go-back.wav in Resources */,
+				E60AE2132B04617900BFC55B /* D_piano.wav in Resources */,
+				E6AF28AE2B0E727700E8FF7F /* select.wav in Resources */,
+				E60AE2172B04617900BFC55B /* B_piano.wav in Resources */,
+				E6AF28B52B0E727700E8FF7F /* velas.wav in Resources */,
+				E6AF28D72B0E850B00E8FF7F /* cat-toy.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +521,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -385,6 +582,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -411,7 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VersionFinalApp/Preview Content\"";
-				DEVELOPMENT_TEAM = D4QMJ8QY46;
+				DEVELOPMENT_TEAM = 48W7BT97MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
@@ -444,7 +642,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VersionFinalApp/Preview Content\"";
-				DEVELOPMENT_TEAM = D4QMJ8QY46;
+				DEVELOPMENT_TEAM = 48W7BT97MG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";

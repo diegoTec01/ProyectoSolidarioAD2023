@@ -37,7 +37,9 @@ struct DecorarPastel: View {
     @State var dragAmountVelas = CGSize.zero
     @State var dragAmountBlanco = CGSize.zero
     
-    
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     var body: some View {
         VStack(){
@@ -46,7 +48,7 @@ struct DecorarPastel: View {
             
             HStack {
                 Button(action: {
-                    play(sound: "Sonidos/Minijuegos/go-back.wav")
+                    play(sound: "go-back.wav")
                     dismiss()
                 }) {
                     Image(systemName: "arrowshape.backward.fill")
@@ -165,7 +167,7 @@ struct DecorarPastel: View {
                                             if cakeBox.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 80 + dragAmountBetunAzul.width, y: (geo2.frame(in: .global).minY) + 100 + dragAmountBetunAzul.height)) {
                                                 DispatchQueue.main.async {
                                                     betunes = "Pastel/pastel_azul"
-                                                    play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                    play(sound: "impact-paint-1.wav")
                                                 }
                                             }
                                             self.dragAmountBetunAzul = .zero
@@ -186,7 +188,7 @@ struct DecorarPastel: View {
                                             if cakeBox.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountBetunRosa.width, y: (geo2.frame(in: .global).minY) + 70 + dragAmountBetunRosa.height)) {
                                                 DispatchQueue.main.async {
                                                     betunes = "Pastel/pastel_rosa"
-                                                    play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                    play(sound: "impact-paint-1.wav")
                                                 }
                                             }
                                             self.dragAmountBetunRosa = .zero
@@ -207,7 +209,7 @@ struct DecorarPastel: View {
                                             if cakeBox.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountBetunNaranja.width, y: (geo2.frame(in: .global).minY) + 220 + dragAmountBetunNaranja.height)) {
                                                 DispatchQueue.main.async {
                                                     betunes = "Pastel/pastel_naranja"
-                                                    play(sound: "Sonidos/Minijuegos/vetunazo-1.wav")
+                                                    play(sound: "impact-paint-1.wav")
                                                 }
                                             }
                                             self.dragAmountBetunNaranja = .zero
@@ -248,7 +250,7 @@ struct DecorarPastel: View {
                                             if cakeBox.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 230 + dragAmountPerlas.width, y: (geo2.frame(in: .global).minY) + 370 + dragAmountPerlas.height)) {
                                                 DispatchQueue.main.async {
                                                     perlas = "Pastel/perlas"
-                                                    play(sound: "Sonidos/Minijuegos/perlas.wav")
+                                                    play(sound: "pearls.wav")
                                                 }
                                             }
                                             self.dragAmountPerlas = .zero
@@ -269,7 +271,7 @@ struct DecorarPastel: View {
                                             if cakeBox.contains(CGPoint(x: (geo2.frame(in: .global).minX) + 80 + dragAmountVelas.width, y: (geo2.frame(in: .global).minY) + 220 + dragAmountVelas.height)) {
                                                 DispatchQueue.main.async {
                                                     velas = "Pastel/velas"
-                                                    play(sound: "Sonidos/Minijuegos/velas.wav")
+                                                    play(sound: "velas.wav")
                                                 }
                                             }
                                             self.dragAmountVelas = .zero
@@ -319,6 +321,9 @@ struct DecorarPastel: View {
             startPoint: .leading,
             endPoint: .trailing
         ))
+        .onAppear() {
+            init_sound()
+        }
     }
     
 }

@@ -47,7 +47,7 @@ struct VistaGlobo: View {
                     counter += 1
                     score += 1
                     wasHovered = true
-                    play(sound: "ballonPop.mp3")
+                    play(sound: "correct-3.wav")
                 }
                 
                 

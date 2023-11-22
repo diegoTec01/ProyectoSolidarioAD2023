@@ -14,8 +14,12 @@ struct Xilofono: View {
     @Environment(\.dismiss) private var dismiss
     
     let colors: [Color] = [.red, .orange, .yellow, .green, .blue, .purple, .pink]
-    let notes: [String] = ["Do", "Re", "Mi", "Fa", "Sol", "La", "Si"]
+    let notes: [String] = ["C", "D", "E", "F", "G", "A", "B"]
     let buttonSize: CGFloat = 70
+    
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
 
     var body: some View {
         
@@ -27,7 +31,7 @@ struct Xilofono: View {
                 
                 HStack {
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -115,6 +119,9 @@ struct Xilofono: View {
             LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
         )
+        .onAppear() {
+            init_sound()
+        }
         
         
         

@@ -17,6 +17,10 @@ struct GatoTap: View {
     @Environment(\.dismiss) private var dismiss
     @State var imagen = "Gato/gato_base"
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -63,7 +67,7 @@ struct GatoTap: View {
                             .position(x: geo.size.width/2, y: geo.size.height/2 + geo.size.height/9)
                             .onTapGesture {
                                 speakF(text: "Gato", isOn: textToSpeech)
-                                play(sound: "catMeow1.mp3")
+                                play(sound: "meow.wav")
                                 imagen = "Gato/gato_tap"
                                 Task {
                                     try? await Task.sleep(nanoseconds: UInt64(1 * 1E9))
@@ -71,7 +75,7 @@ struct GatoTap: View {
                                 }
                             }
                         Button(action: {
-                            play(sound: "go-back")
+                            play(sound: "go-back.wav")
                             dismiss()
                         }) {
                             Text("Regresar")
@@ -105,6 +109,9 @@ struct GatoTap: View {
             
         }
         .ignoresSafeArea()
+        .onAppear() {
+            init_sound()
+        }
     }
     
     func speakF(text: String, isOn: Bool) {

@@ -54,8 +54,12 @@ struct Bateria: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    let drumSounds: [String] = ["kick", "snare", "hi-hat", "tom", "crash"]
+    let drumSounds: [String] = ["hi-hat", "snare", "kick", "tom", "crash"]
     let drumPieces: [String] = ["b4_izq","b1_izq","b3_medio","b1_der","b5_der"]
+    
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     var body: some View {
         ZStack {
@@ -64,7 +68,7 @@ struct Bateria: View {
                 
                 HStack {
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -157,6 +161,9 @@ struct Bateria: View {
             LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
         )
+        .onAppear() {
+            init_sound()
+        }
     }
     
 }

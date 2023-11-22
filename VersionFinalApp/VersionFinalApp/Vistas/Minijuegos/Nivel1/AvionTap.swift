@@ -31,12 +31,15 @@ struct AvionTap: View {
     
     @State private var timer: Timer? // Declare the timer variable
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
     
     var body: some View {
         VStack{
             HStack{
                 Button(action: {
-                    play(sound: "Sonidos/Minijuegos/go-back.wav")
+                    play(sound: "go-back.wav")
                     dismiss()
                 }) {
                     Image(systemName: "arrowshape.backward.fill")
@@ -130,6 +133,7 @@ struct AvionTap: View {
             }
             .padding(30)
             .onAppear {
+                init_sound()
                 // Start the game by moving the button to a random position with variable speed
                 moveButton(to: randomPosition(in: gameAreaSize), withSpeed: speed)
             }

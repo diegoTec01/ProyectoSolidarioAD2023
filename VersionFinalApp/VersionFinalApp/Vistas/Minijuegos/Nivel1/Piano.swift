@@ -15,6 +15,10 @@ struct Piano: View {
     
     let whiteKeys: [String] = ["C_piano", "D_piano", "E_piano", "F_piano", "G_piano", "A_piano", "B_piano"]
     let blackKeys: [String?] = ["CS_piano", "DS_piano", nil, "FS_piano", "GS_piano", "AS_piano"]
+    
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
 
     var body: some View {
         ZStack {
@@ -23,7 +27,7 @@ struct Piano: View {
                 
                 HStack {
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -103,6 +107,9 @@ struct Piano: View {
             LinearGradient(gradient: Gradient(colors: [.purple, .blue]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
         )
+        .onAppear() {
+            init_sound()
+        }
     }
 
     func createWhiteKeys(keyWidth: CGFloat, keyHeight: CGFloat) -> some View {

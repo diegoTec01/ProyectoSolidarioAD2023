@@ -25,6 +25,10 @@ struct PerroDrag: View {
     @State var dragAmountToy = CGSize.zero
     @State var dragAmountFood = CGSize.zero
     
+    func init_sound() {
+        play(sound: "select-game.wav")
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(
@@ -143,12 +147,13 @@ struct PerroDrag: View {
                             }
                             .onEnded { _ in
                                 if bowlBox.contains(CGPoint(x: geo.size.width/1.39 + dragAmountFood.width, y: geo.size.height/2.57 + dragAmountFood.height)) {
-                                    play(sound: "pourFood.mp3")
+                                    play(sound: "pouring-food.wav")
+                                    play(sound:"bark.wav")
                                     DispatchQueue.main.async {
                                         bowlImage = "Perro/plato_lleno"
                                         dogImage = "Perro/perro_comiendo"
                                         Task {
-                                            play(sound:"dogBark1.mp3")
+                                            play(sound:"bark.wav")
                                             try? await Task.sleep(nanoseconds: UInt64(3 * 1E9))
                                             bowlImage = "Perro/plato_vacio"
                                             dogImage = "Perro/perro_base"
@@ -184,11 +189,11 @@ struct PerroDrag: View {
                             }
                             .onEnded { _ in
                                 if dogBox.contains(CGPoint(x: geo.size.width/1.42 + dragAmountSponge.width, y: geo.size.height/1.66 + dragAmountSponge.height)) {
-                                    play(sound: "scrubbing.mp3")
+                                    play(sound: "bark.wav")
                                     DispatchQueue.main.async {
                                         dogImage = "Perro/perro_enjabonado"
                                         Task {
-                                            play(sound: "dogBark1.mp3")
+                                            play(sound: "bark.wav")
                                             try? await Task.sleep(nanoseconds: UInt64(3 * 1E9))
                                             dogImage = "Perro/perro_base"
                                         }
@@ -223,9 +228,10 @@ struct PerroDrag: View {
                             }
                             .onEnded { _ in
                                 if dogBox.contains(CGPoint(x: geo.size.width/1.39 + dragAmountToy.width, y: geo.size.height/1.23 + dragAmountToy.height)) {
-                                    play(sound: "squeaky.mp3")
+                                    play(sound: "bark.wav")
+                                    play(sound: "dog-toy.wav")
                                     DispatchQueue.main.async {
-                                        play(sound: "dogBark1.mp3")
+                                        play(sound: "bark.wav")
                                         dogImage = "Perro/perro_jugando"
                                         Task {
                                             try? await Task.sleep(nanoseconds: UInt64(5 * 1E9))
@@ -247,7 +253,7 @@ struct PerroDrag: View {
                         speakF(text: "Jugar", isOn: textToSpeech)
                     }
                 Button(action: {
-                    play(sound: "Sonidos/Minijuegos/go-back.wav")
+                    play(sound: "go-back.wav")
                     dismiss()
                 }) {
                     Text("Regresar")
@@ -278,6 +284,9 @@ struct PerroDrag: View {
             }
         }
         .ignoresSafeArea()
+        .onAppear() {
+            init_sound()
+        }
     }
     
     func speakF(text: String, isOn: Bool) {

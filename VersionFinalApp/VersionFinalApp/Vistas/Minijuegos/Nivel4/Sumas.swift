@@ -33,7 +33,7 @@ struct Sumas: View {
     func generarRandom(){
         
         totalRight = totalRight + 1
-        play(sound: "ballonPop.mp3")
+        play(sound: "correct-2.wav")
         
         arregloDeNumeros = [Int]()
         numerorandom1 = Int.random(in: 1...9)
@@ -62,7 +62,7 @@ struct Sumas: View {
                 GeometryReader { geometry in
                     //Spacer()
                     Button(action: {
-                        play(sound: "Sonidos/Minijuegos/go-back.wav")
+                        play(sound: "go-back.wav")
                         dismiss()
                     }) {
                         Image(systemName: "arrowshape.backward.fill")
@@ -141,7 +141,7 @@ struct Sumas: View {
                 HStack{
                     Button ("\(election)"){
                         if (election == sumaNumeros2){
-                            play(sound: "Sonidos/Minijuegos/correct-1.wav")
+                            play(sound: "correct-1.wav")
                             generarRandom()
                             
                         }
@@ -156,7 +156,7 @@ struct Sumas: View {
                     
                     Button ("\(electiontwo)"){
                         if (electiontwo == sumaNumeros2){
-                            play(sound: "Sonidos/Minijuegos/correct-1.wav")
+                            play(sound: "correct-1.wav")
                             generarRandom()
                             
                         }
